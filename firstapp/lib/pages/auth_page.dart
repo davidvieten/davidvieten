@@ -4,7 +4,6 @@ import "package:firstapp/pages/home_page.dart";
 import "package:firstapp/pages/login_page.dart";
 import "package:flutter/material.dart";
 
-//issue seems to be coming from auth
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
