@@ -3,19 +3,62 @@ import 'package:firstapp/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:firstapp/components/my_button.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   LoginPage({super.key});
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   //text editing controllers
   final emailController = TextEditingController();
+
   final passwordController = TextEditingController();
 
   //log in user method
   void logUserIn () async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
+    // loading circle
+    showDialog(
+      context: context,
+       builder: (context) {
+        return const Center(
+          child: CircularProgressIndicator(),
+        );
+      },
+    );
+
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
       email: emailController.text, 
-      password: passwordController.text);
+      password: passwordController.text
+      );
+      //pop the loading circle
+      Navigator.pop(context);
+    } on FirebaseAuthException catch (e) {
+      print(e);
+      //pop loading circle
+      Navigator.pop(context);
+      //wrong email
+      if (e.code == 'invalid-credential') {
+        //popup error for user
+        wrongCredentialMessage();
+      //wrong password
+      }
+    }
   }
+
+  //popup when email is not found
+    void wrongCredentialMessage() {
+      showDialog(
+        context: context,
+        builder:(context) {
+          return const AlertDialog(
+            title: Text('Wrong Email/Password'),
+          );
+        },
+      );
+    }
 
   @override
   Widget build(BuildContext context) {
@@ -101,9 +144,5 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
-
-
-
-
 }
 
