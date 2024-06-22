@@ -1,7 +1,9 @@
 <h1 align="center">Hi 👋, I'm David Vieten</h1>
-<h3 align="center">A passionate frontend developer from Los Angeles</h3>
+<h3 align="center">A passionate student from Los Angeles studying Computer Science</h3>
 
 - 🌱 I’m currently learning **Next.js and Database integration through Prisma.**
+
+- 🎓 I’m studying **Computer Science** at **Williams College** and currently enrolled in **CS334 - Principles of Programming Languages.**
 
 - 📫 How to reach me **dav3@williams.edu**
 
