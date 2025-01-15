@@ -1,7 +1,8 @@
 <h1 align="center">Hi 👋, I'm David Vieten</h1>
 <h3 align="center">A passionate student from Los Angeles, California studying Computer Science</h3>
 
-- 🌱 I’m currently learning **Next.js and Database integration through Prisma.**
+- 🌱 I’m currently learning **Next.js and Database integration through Prisma.**  
+- ✨ Exploring decentralized applications (DApps) on the blockchain.
 
 - 🎓 I’m studying **Computer Science** at **Williams College** and currently enrolled in **CS256 - Algorithm Design & Analysis.**
 
