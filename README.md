@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **Next.js and Database integration through Prisma.**
 
-- 🎓 I’m studying **Computer Science** at **Williams College** and currently enrolled in **CS237 - Computer Organization.**
+- 🎓 I’m studying **Computer Science** at **Williams College** and currently enrolled in **CS256 - Algorithm Design & Analysis.**
 
 - 📫 How to reach me **dav3@williams.edu**
 
